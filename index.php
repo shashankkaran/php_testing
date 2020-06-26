@@ -10,7 +10,7 @@
 <section style="background:grey; text-align:center; padding:1rem; margin:1rem  ; border:1rem solid black; border-radius:1rem; "   >
 
 
-<form  action="action.php" method="POST">
+<form  action="action.php" method="GET">
 <br><br>
 
 NAME<br><input type="text" placeholder="name" name="name"> <br><br>

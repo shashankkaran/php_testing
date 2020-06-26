@@ -12,16 +12,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
 <?php
+
 
 
 $servername ="localhost";
@@ -85,9 +77,12 @@ $rl=$_GET ['roll'];
 $ag = $_GET ['age'];
 $cl=$_GET['class'];
 
+echo $sn;
+echo $rl;
+echo $cl;
+echo $ag;
 
-
-$query =  "insert('$sn','$rl','$ag','$cl')";
+$query =  "INSERT INTO testtable('$sn','$rl','$ag','$cl')";
 $data = mysqli_query($con,$query) ;
 
 if($data)
@@ -106,14 +101,18 @@ else {
 
 <?php
 
-echo "thank for submitting"
+echo "thank for submitting" ;
 
 
 
-
+header("refresh:2; url=index.php ") ;
 
 
 ?>
+
+
+
+
 
 
 
